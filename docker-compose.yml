@@ -9,8 +9,8 @@ services:
     - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     - ./config/letsencrypt/www:/var/www/letsencrypt
     - ./config/letsencrypt/etc:/etc/letsencrypt
-            #    links:
-            #    - webmail
+    links:
+    - web
             #    - phpldapadmin:ldapadmin
 
    web:
